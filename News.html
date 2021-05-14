@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.main {
+  float: left;
+  width: 100%;
+  padding: 0 20px;
+  overflow: hidden;
+  background-color: #EC9A76;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main, .announcement {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .announcement {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ddd;
+  color: black;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Background{
+  background-image: url('background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p {
+  font-size: 17px;
+}
+
+
+_______________________________
+
+
+.recentNews {
+    background-color: #CF551F;
+}
+.recentNews .news-title {
+    text-align:center;
+    padding-top:0px;
+    padding-bottom:0px;
+    font-family: 'nimbus-sans-condensed', sans-serif;
+    font-size:55px;
+    font-weight:bold;
+    color: black;
+}
+.recentNews .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.recentNews .ct-blog {
+    margin-bottom: 30px;
+}
+.ct-blog .inner {
+    background-color: #FFF;
+    padding: 10px;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+    height: 100%;
+}
+.ct-blog .inner:hover {
+    background-color: #e6e6e6;
+}
+.ct-blog .fauxcrop {
+    height: 180px;
+    overflow: hidden;
+}
+.ct-blog .fauxcrop img {
+    width: 100%;
+}
+.ct-blog-content {
+    display: table;
+    padding: 30px 0 28px;
+}
+.ct-blog-content .ct-blog-date {
+    border-right: 1px solid #95A5A6;
+    display: table-cell;
+    font-family: "Lato", sans-serif;
+    padding: 0px 18px 0px 15px;
+    text-align: center;
+}
+.ct-blog-content .ct-blog-date span {
+    font-size: 16px;
+    color: rgb(20, 117, 175);  
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+}
+.ct-blog-content .ct-blog-date strong {
+    font-size: 25px;
+    color: rgb(20, 117, 175);  
+}
+.ct-blog-content .ct-blog-header {
+    color: #000;
+    display: table-cell;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    line-height: 1.1;
+    padding: 0 20px;
+    vertical-align: top;
+}
+.btn-news {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.btn-news.btn-contests a {
+    color: black;
+    font-family: 'nimbus-sans-condensed', sans-serif;
+    font-size: 24px;
+    transition: all 0.2s ease-in-out 0s;
+}
+.btn-news.btn-contests a:hover {
+    color: white;
+}
+</style>
+
+</head>
+<body style="font-family:Verdana;">
+
+
+<div class="Background" style="padding:15px;"><img src="BCNHS.png" alt="BCNHS" style="width:auto;50px;">
+  <h1 style="text-align:center; color:white;">High School Alma Mater</h1>
+  <h3 style="text-align:center; color:white;">Baguio National High School</h3>
+</div>
+
+<div class="topnav">
+  <a href="Home.html">Home</a>
+  <a class="active"  href="News.html">News</a>
+  <a href="Gallery.html">Photo Gallery</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
+
+</div>
+
+  <div class="main">
+    <h1 style="text-align:center;background-color:#AB2525">News Article</h1>
+    <section class="recentNews">
+	<div class="container">
+		<h2 class="news-title">
+			Recent News
+		</h2>
+		<div class="row">
+			<div class="ct-blog col-sm-6 col-md-4">
+				<div class="inner">
+					<div class="fauxcrop">
+						<a href="https://baguiocityhigh.wordpress.com/2020/06/12/shs-academic-excellence-awardees-sy-2019-2020/"><img alt="News Entry" src="News1.jpg"></a>
+					</div>
+					<div class="ct-blog-content">
+						<div class="ct-blog-date">
+							<span>June</span><strong>12</strong><span>2019</span>
+						</div>
+						<h3 class="ct-blog-header">
+							SHS ACADEMIC EXCELLENCE AWARDEES (SY 2019-2020)
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="ct-blog col-sm-6 col-md-4">
+				<div class="inner">
+					<div class="fauxcrop">
+						<a href="https://baguiocityhigh.wordpress.com/2019/10/15/city-higher-takes-mayoral-seat-in-sofad/"><img alt="News Entry" src="News2.jpg"></a>
+					</div>
+					<div class="ct-blog-content">
+						<div class="ct-blog-date">
+							<span>October</span><strong>15</strong><span>2019</span>
+						</div>
+						<h3 class="ct-blog-header">
+							CITY HIGHER TAKES MAYORAL SEAT IN SOFAD
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="ct-blog col-sm-6 col-md-4">
+				<div class="inner">
+					<div class="fauxcrop">
+						<a href="https://baguiocityhigh.wordpress.com/2019/10/02/city-high-grad-tops-2019-librarian-board-exam/"><img alt="News Entry" src="News3.jpeg"></a>
+					</div>
+					<div class="ct-blog-content">
+						<div class="ct-blog-date">
+							<span>October</span><strong>2</strong><span>2019</span>
+						</div>
+						<h3 class="ct-blog-header">
+							CITY HIGH GRAD TOPS 2019 LIBRARIAN BOARD EXAM
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="ct-blog col-sm-6 col-md-4">
+				<div class="inner">
+					<div class="fauxcrop">
+						<a href="https://baguiocityhigh.wordpress.com/2020/07/29/bcnhs-virtual-5th-moving-up-ceremony-for-grade-10-completers-sy-2019-2020/"><img alt="News Entry" src="News4.jpg"></a>
+					</div>
+					<div class="ct-blog-content">
+						<div class="ct-blog-date">
+							<span>July</span><strong>29</strong><span>2020</span>
+						</div>
+						<h3 class="ct-blog-header">
+							BCNHS VIRTUAL 5TH MOVING UP CEREMONY FOR GRADE 10 COMPLETERS (SY 2019-2020)
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="ct-blog col-sm-6 col-md-4">
+				<div class="inner">
+					<div class="fauxcrop">
+						<a href="https://baguiocityhigh.wordpress.com/2020/07/24/bcnhs-shs-virtual-graduation/"><img alt="News Entry" src="News5.jpg"></a>
+					</div>
+					<div class="ct-blog-content">
+						<div class="ct-blog-date">
+							<span>July</span><strong>24</strong><span>2020</span>
+						</div>
+						<h3 class="ct-blog-header">
+							BCNHS SHS VIRTUAL GRADUATION
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="ct-blog col-sm-6 col-md-4">
+				<div class="inner">
+					<div class="fauxcrop">
+						<a href="https://baguiocityhigh.wordpress.com/2020/06/12/shs-academic-excellence-awardees-sy-2019-2020/"><img alt="News Entry" src="News6.jpg"></a>
+					</div>
+					<div class="ct-blog-content">
+						<div class="ct-blog-date">
+							<span>June</span><strong>12</strong><span>2020</span>
+						</div>
+						<h3 class="ct-blog-header">
+							GRADE 8 ACADEMIC EXCELLENCE AWARDEES (SY 2019-2020)
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-news btn-contests">
+			<a href="https://baguiocityhigh.wordpress.com/2020/06/">VIEW ALL NEWS</a>
+		</div>
+	</div>
+</section>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
